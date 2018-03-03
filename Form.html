@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<!-- JSFormValidation.html -->
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>HTML Form Input Validation Using JavaScript</title>
+    <link rel="stylesheet" href="JSFormValidation.css">
+    <script src="InteraciveForm.js"></script>
+    <meta name ="viewport" content="width=device=width, intial-scale-1.0">
+    <!-- telling the smartphone that the content needs to be equal to the width of the
+    device width. Intial scale means , do not scale this website up or down to fit the content -->
+</head>
+
+<body>
+<h2>HTML Form Input Validation Using JavaScript</h2>
+
+<div id = "wrapper">
+<form id="formTest" method="get" action="processData">
+    <table id = "nestedElements">
+        <tr class = "lol">
+            <!-- each html element is assigned an unique id, so that it can be selected in javascript via the getElementId function -->
+            <td><label for="txtName">Name<span class="required">*</span></label></td> <!-- A Label can be bound either by using the for attribute, or by placing the element inside the <label> element -->
+            <td><input type="text" id="txtName" name="name"></td>   <!--
+
+It makes a click on the label focus the input element it is for.
+In the example you posted, you simply click on the word Male or the radio button in order for it to get selected.
+Without this, you have a much smaller target to click... -->
+            <td id="elmNameError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtAddress">Address</label></td>
+            <td><input type="text" id="txtAddress" name="address"></td>
+            <td id="elmAddressError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtZipcode">Zip Code<span class="required">*</span></label></td>
+            <td><input type="text" id="txtZipcode" name="zipcode"></td>
+            <td id="elmZipcodeError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td>Country<span class="required">*</span></td>
+            <td><select id="selCountry" name="country">
+                <option value="" selected>Please select...</option>
+                <option value="AA">AA</option>
+                <option value="BB">BB</option>
+                <option value="CC">CC</option>
+            </select></td>
+            <td id="elmCountryError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td>Gender<span class="required">*</span></td>
+            <td><label><input type="radio" name="gender" value="m">Male</label>
+                <label><input type="radio" name="gender" value="f">Female</label></td>
+            <td id="elmGenderError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td>Preferences<span class="required">*</span></td>
+            <td><label><input type="checkbox" name="color" value="r">Red</label>
+                <label><input type="checkbox" name="color" value="g">Green</label>
+                <label><input type="checkbox" name="color" value="b">Blue</label></td>
+            <td id="elmColorError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtPhone">Phone<span class="required">*</span></label></td>
+            <td><input type="text" id="txtPhone" name="phone"></td>
+            <td id="elmPhoneError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtEmail">Email<span class="required">*</span></label></td>
+            <td><input type="text" id="txtEmail" name="email"></td>
+            <td id="elmEmailError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtPassword">Password (6-8 characters)<span class="required">*</span></label></td>
+            <td><input type="password" id="txtPassword" name="password"></td>
+            <td id="elmPasswordError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td><label for="txtPWVerified">Verify Password<span class="required">*</span></label></td>
+            <td><input type="password" id="txtPWVerified" name="pwVerified"></td>
+            <td id="elmPWVerifiedError" class="errorMsg">&nbsp;</td></tr>
+        <tr>
+            <td>&nbsp;</td> <!-- The <input type="button"> is just a button and won't do anything by itself. The <input type="submit">,
+            when inside a form element, will submit the form when clicked.
+Another useful 'special' button is the <input type="reset"> that will clear the form.-->
+            <td><input type="submit" value="SEND" id="btnSubmit">&nbsp;
+                <input type="reset" value="CLEAR" id="btnReset"></td>
+            <td>&nbsp;</td></tr>
+    </table>
+</form>
+</div>
+</body>
+</html>

@@ -1,0 +1,126 @@
+/* JSFormValidation.css */
+.required {  /* Marker for required fields */
+    color: red;
+}
+
+.errorMsg {  /* for error messages */
+    color: red;
+}
+
+.errorBox {  /* for the error input text fields */
+    border: 2px solid red;
+}
+
+table {
+    border: 1px solid black;
+    border-collapse: collapse;
+    opacity: 0.95;
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+
+}
+
+#btnSubmit{
+
+    float: left;
+    background-color: #37af7e;
+    border: none;
+    color: black;
+    padding: 15px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+#btnReset{
+
+    float: left;
+    background-color: #37af7e;
+    border: none;
+    padding: 15px;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+    margin: 4px 2px;
+    cursor: pointer;
+}
+
+
+
+body{
+    background: silver;
+}
+
+td {
+    margin: 0;
+    padding: 3px 10px;
+}
+
+th, td {
+    text-align: left;
+    padding: 8px;
+}
+
+tr {
+    background: darkseagreen;
+
+}
+
+article{
+    overflow-x: auto;
+}
+
+#wrapper {
+    /**max-width: 500px;
+    margin: auto;
+    background: rosybrown;
+    padding: 10px;**/
+    width: 450px;
+    background-color: #319a86;
+    border-radius: 10px;
+    padding: 5px;
+    margin: auto;
+    border-width: 1px;
+    border-color: #647a9a;
+    border-style: solid;
+
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%; /* full window width */
+    text-align: center;
+}
+
+#nestedElements{
+    width: 450px;
+}
+
+.lol{
+    width: 50px;
+}
+
+article {
+    overflow-x: auto
+}
+
+
+@media screen and (max-width:499px){
+
+   /** #wrapper{
+       width: 100%;
+    }
+
+    #nestedElements{
+        width: 70%;
+    }**/
+
+
+
+
+}
