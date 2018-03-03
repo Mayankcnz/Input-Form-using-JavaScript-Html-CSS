@@ -82,41 +82,6 @@ function isNotEmpty(inputField, errorMessage, errorPlace) {
 
 }
 
-/**function postValidate(isValid, inputField, errorMessage, errorPlace){
-
-
-    if(!isValid){ // if the user input is not valid
-        if(errorMessage !== undefined &&  errorMessage !== null
-           && errorPlace !== undefined && errorPlace !== null){
-            errorPlace.innerHTML = errorMessage; //  show error Message for the place reserved for it
-        }
-
-        // now need to set the focus on the input field to notify the user to correct the error
-        if(inputField !== undefined && inputField !== null){
-            inputField.classList.add("errorBox");
-            inputField.focus();
-        }
-    }else { // the input is valid, so no need to show the error
-
-
-        if(errorMessage !== undefined && errorMessage !== null){
-            errorMessage.innerHTML = "";
-        }
-        if(errorPlace !== undefined && errorPlace !== null){
-            errorPlace.classList.remove("errorBox");
-        }
-
-    }
-
-}
-
-
-function isNumeric(inputField, errorMessage, errorPlace) {
-
-    var isValid = (inputField.value.trim().match(/^d+$/) !== null);
-    postValidate(isValid, inputField, errorMessage, errorPlace);
-    return isValid;
-}**/
 
 function postValidate(isValid, errMsg, errElm, inputElm) {
     if (!isValid) {
